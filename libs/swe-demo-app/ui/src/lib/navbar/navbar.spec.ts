@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SweDemoAppUi } from './swe-demo-app-ui';
+import { Navbar } from './navbar';
 
-describe('SweDemoAppUi', () => {
-  let component: SweDemoAppUi;
-  let fixture: ComponentFixture<SweDemoAppUi>;
+describe('Navbar', () => {
+  let component: Navbar;
+  let fixture: ComponentFixture<Navbar>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SweDemoAppUi],
+      imports: [Navbar],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SweDemoAppUi);
+    fixture = TestBed.createComponent(Navbar);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

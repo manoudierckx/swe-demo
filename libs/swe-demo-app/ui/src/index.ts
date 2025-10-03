@@ -1,1 +1,2 @@
-export * from './lib/swe-demo-app-ui/swe-demo-app-ui';
+//libs/swe-demo/ui/src/index.ts
+export * from "./lib/navbar/navbar";
