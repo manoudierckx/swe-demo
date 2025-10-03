@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Navbar } from '@swe-demo/swe-demo-app-ui';
+import { NavItem } from '@swe-demo/shared-domain';
 
 @Component({
   selector: 'lib-swe-demo-app-feature-navbar-container',
@@ -8,7 +9,7 @@ import { Navbar } from '@swe-demo/swe-demo-app-ui';
   styleUrl: './navbar-container.css',
 })
 export class NavbarContainer {
-  readonly items = [
+  readonly items: NavItem[] = [
     {
       label: "Home", path: "/"
     },
@@ -19,4 +20,8 @@ export class NavbarContainer {
       label: "Account", path: "/account"
     }
   ]
+
+  onNavigate(path : string) {
+    console.log("Navigation triggered to " + path);
+  }
 }

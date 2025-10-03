@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SharedDomain } from './shared-domain';
+import { Home } from './home';
 
-describe('SharedDomain', () => {
-  let component: SharedDomain;
-  let fixture: ComponentFixture<SharedDomain>;
+describe('Home', () => {
+  let component: Home;
+  let fixture: ComponentFixture<Home>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SharedDomain],
+      imports: [Home],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SharedDomain);
+    fixture = TestBed.createComponent(Home);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
